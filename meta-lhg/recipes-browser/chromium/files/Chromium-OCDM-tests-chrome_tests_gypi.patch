@@ -1,0 +1,13 @@
+diff --git a/chrome/chrome_tests.gypi b/chrome/chrome_tests.gypi
+index cd55c6a..7c84f4c 100644
+--- a/chrome/chrome_tests.gypi
++++ b/chrome/chrome_tests.gypi
+@@ -329,6 +329,8 @@
+       'browser/media/defer_background_media_browsertest.cc',
+       'browser/media/encrypted_media_browsertest.cc',
+       'browser/media/encrypted_media_supported_types_browsertest.cc',
++      # OCDM tests
++      '<(DEPTH)/media/cdm/ppapi/external_open_cdm/src/browser/chrome/tests/ocdm_encrypted_media_istypesupported_browsertest.cc',
+       'browser/media/media_browsertest.cc',
+       'browser/media/media_browsertest.h',
+       'browser/media/media_stream_devices_controller_browsertest.cc',

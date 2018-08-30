@@ -1,0 +1,14 @@
+Index: ppapi/tests/test_struct_sizes.c
+diff --git a/ppapi/tests/test_struct_sizes.c b/ppapi/tests/test_struct_sizes.c
+index 238a269f73387c60a3689eeeb5d409bb639e8c85..6a49bc06a2ffdb77f3ca43103c039e4afc5bc524 100644
+--- a/ppapi/tests/test_struct_sizes.c
++++ b/ppapi/tests/test_struct_sizes.c
+@@ -12,7 +12,7 @@
+ 
+ #include "ppapi/tests/all_c_includes.h"
+ 
+-#if !defined(__native_client__) && (defined(_M_X64) || defined(__x86_64__))
++#if !defined(__native_client__) && (defined(_M_X64) || defined(__x86_64__) || defined(__aarch64__))
+ /* This section is for 64-bit compilation on Windows, Mac, and Linux.  Native
+    client follows ILP32 even if -m64 is used, so NaCl code is explicitly treated
+    as 32-bit.  This means pointers are always 4 bytes in native client, and it
